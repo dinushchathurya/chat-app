@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootsrapcdn.com/bootsrap/3.3.7/css/bootsrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootsrapcdn.com/bootsrap/3.3.7/js/bootsrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/signin,css">
 </head>
 <body>
     <div class="signin-form">
@@ -25,9 +26,13 @@
     			<label>Email</label>
     			<input type="password" name="pass"class="form-control" placeholder="Enter your password here" autocomplete="off" required>
     		</div>
-    		<div class="small">Forgot password?<a href="forgot_pass.php">Click Here</a>
-    		</div><br>
+    		<div class="small">Forgot password?<a href="forgot_pass.php">Click Here</a></div><br>
+    		<div class="form-group">
+    			<button type="submit" class="btn btn-primary btn-block btn-lg" name=sign_in>Sign In</button>
+    		</div>
+    		<!--<?php //include("signin_user.php"); ?>-->
     	</form>
+    	<div class="text-center small" style="color: #674288;">Don't have an account <a href="signup.php">Create an account</a></div>
     </div>
 </body>
 </html>
