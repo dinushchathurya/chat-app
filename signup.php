@@ -50,14 +50,14 @@
             </div>
             <div class="form-group">
                 <label class="check-box-inline">
-                    <input type="checkbox" required>I accept the <a href="#">Terms of use</a> &amp; 
+                    <input type="checkbox" required> I accept the <a href="#">Terms of use</a> &amp; 
                     <a href="#">Privacy Policy</a>
                 </label>
             </div>
     		<div class="form-group">
     			<button type="submit" class="btn btn-primary btn-block btn-lg" name=sign_up>Sign Up</button>
     		</div>
-    		<!--<?php //include("signup_user.php"); ?>-->
+    		<?php include("signup_user.php"); ?>
     	</form>
     	<div class="text-center small" style="color: #674288;">Already have an account? <a href="signin.php">Log in here</a></div>
     </div>

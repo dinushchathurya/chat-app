@@ -26,7 +26,7 @@
     			<label>Password</label>
     			<input type="password" name="pass"class="form-control" placeholder="Enter your password here" autocomplete="off" required>
     		</div>
-    		<div class="small">Forgot password?<a href="forgot_pass.php">Click Here</a></div><br>
+    		<div class="small">Forgot password?<a href="forgot_pass.php"> Click Here</a></div><br>
     		<div class="form-group">
     			<button type="submit" class="btn btn-primary btn-block btn-lg" name=sign_in>Sign In</button>
     		</div>
