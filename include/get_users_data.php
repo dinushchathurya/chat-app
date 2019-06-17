@@ -22,7 +22,7 @@ while($row_user = mysqli_fetch_array($run_user)){
 	   	echo"<span><i class='fa fa-circle-o' araia-hidden='true'></i>Offline</span>";
 	   }
 	   "
-	   </div>
+	      </div>
 	   </li>
 	   ";
 	}
