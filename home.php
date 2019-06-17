@@ -66,7 +66,7 @@ else{
      				?>
      				<div class="col-md-12" right-header>
      					<div class="right-header-img">
-     						<img src="<?php echo"$user_profile_image";?>">
+     						<img src="<?php echo "$user_profile_image"; ?>">
 
      					</div>
      					<div class="right-header_detail">
