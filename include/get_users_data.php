@@ -1,5 +1,5 @@
 <?php 
-$con -mysqli_connect("localhost","root","","mychat");
+$con =mysqli_connect("localhost","root","","mychat");
 $user = "select *from users";
 $run_user = mysqli_query($con,$user);
 while($row_user = mysqli_fetch_array($run_user)){
@@ -13,9 +13,9 @@ while($row_user = mysqli_fetch_array($run_user)){
 	   <div class='chat-left-img'>
 	     <img src='$user_profile'>
 	   </div>
-	   <div class='chat-left-details'>
-	   <p><a href='home.php?user_name=$user_name=$user_name>$user_name</a></p>";
-	   if($login == "Online"){
+	   <div class='chat-left-detail'>
+	   <p><a href='home.php?user_name=$user_name=$user_name'>$user_name</a></p>";
+	   if($login == 'Online'){
 	   	echo"<span><i class='fa fa-circle' araia-hidden='true'></i>Online</span>";
 	   }
 	   else {
@@ -26,6 +26,6 @@ while($row_user = mysqli_fetch_array($run_user)){
 	   </li>
 	   ";
 	}
-}
+
 
 ?>
