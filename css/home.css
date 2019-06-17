@@ -1,0 +1,13 @@
+.main-section{
+	border:1px solid #000;
+	width: 100%;
+}
+.left-sidebar{
+	background-color: #3A3A3A;
+	padding: 0px;
+}
+.search-box{
+	width:100%;
+	padding: 27px 10px;
+	border-bottom:2px solid #000;
+}
