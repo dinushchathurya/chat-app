@@ -11,3 +11,44 @@
 	padding: 27px 10px;
 	border-bottom:2px solid #000;
 }
+.form-control,.search-icon,.search-icon:hover{
+	background-color: #6A6C75;
+	border:1px solid #fff;
+	color: #fff;
+	box-shadow: none !important;
+}
+.form-control:focus{
+	border:1px solid #fff;
+}
+.chat-left-img,.chat-left-deatail{
+	float: left;
+}
+.left-chat{
+	overflow-y:scroll; 
+}
+.left-chat ul{
+	overflow: hidden;
+	padding: 0px;
+}
+.left-chat ul li{
+	list-style: none;
+	width: 100%;
+	float: left;
+	margin: 10px 0px 8px 15px;
+}
+.chat-left-img img{
+	width:50px;
+	height: 50px;
+	border-radius: 50%;
+	text-align: left;
+	float: fixed;
+	border:3px solid #6B6F79;
+}
+.chat-left-detail{
+	margin-left: 10px;
+}
+.chat-left-detail p{
+	margin:0px;
+	color: #fff;
+	padding: 7px 0px 0px;
+}
