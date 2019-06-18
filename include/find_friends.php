@@ -38,7 +38,7 @@ else{ ?>
             ?> 
         </a>
         <ul class=navbar-nav">
-            <a style="color: white;text-decoration:none;font-size: 25px;"href="../account_setting.php">Settings</a></li>
+            <a style="color: white;text-decoration:none;font-size: 25px;"href="../account_settings.php">Settings</a></li>
         </ul>        
    </nav><br> 
    <div class="row">
