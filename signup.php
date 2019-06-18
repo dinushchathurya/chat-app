@@ -37,6 +37,7 @@
                     <option>United States</option>
                     <option>United Kingdom</option>
                     <option>Sri Lanka</option>
+                    <option>India</option>
                 </select>
             </div>
             <div class="form-group">
