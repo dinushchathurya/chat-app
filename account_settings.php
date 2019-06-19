@@ -2,7 +2,7 @@
 <?php
 session_start();
 include("include/connection.php");
-/*include("include/header.php");*/
+include("include/header.php");
 
 if(!isset($_SESSION['user_email'])){
 	header("location:signin.php");
@@ -22,6 +22,7 @@ else{ ?>
     <link rel="stylesheet" type="text/css" href="../css/find_people.css">
 </head>
 <body>
+	
    <div class="row">
    <div class="col-sm-2">
    </div>
@@ -42,7 +43,7 @@ else{ ?>
       	<form action="" method="post" enctype="multipart/form-data">
       		<table class="table table-bordered table-hover">
       			<tr align="center">
-      				<td colspan="6" class="active"><h2>Change Account Setting</h2></td>
+      				<td colspan="6" class="active"><h2>Change Account Settings</h2></td>
       			</tr>
       			<tr>
       				<td style="font-weight: bold;">Change Your Username</td>
