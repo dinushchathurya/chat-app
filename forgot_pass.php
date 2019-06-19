@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Login to your Account</title>
+    <title>Forgot Password</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatiable" content="IE-edge">
     <meta name="viewport" content="width=device-width, intial-scale=1">
@@ -15,24 +15,46 @@
     <div class="signin-form">
     	<form action="" method="post">
     		<div class="form-header">
-    			<h2>Sign In</h2>
-    			<p>Login in to MyChat</p>
+    			<h2>Forgot Password</h2>
+    			<p>MyChat</p>
     		</div>
     		<div class="form-group">
     			<label>Email</label>
     			<input type="email" name="email"class="form-control" placeholder="example@gmail.com" autocomplete="off" required>
     		</div>
     		<div class="form-group">
-    			<label>Password</label>
-    			<input type="password" name="pass"class="form-control" placeholder="Enter your password here" autocomplete="off" required>
+    			<label>Best Friend Name</label>
+    			<input type="password" name="bf"class="form-control" placeholder="Enter your best friend name here" autocomplete="off" required>
     		</div>
-    		<div class="small">Forgot password?<a href="forgot_pass.php"> Click Here</a></div><br>
     		<div class="form-group">
-    			<button type="submit" class="btn btn-primary btn-block btn-lg" name=sign_in>Sign In</button>
+    			<button type="submit" class="btn btn-primary btn-block btn-lg" name="submit">Recover Your Account</button>
     		</div>
-    		<?php include("signin_user.php"); ?>
+    		
     	</form>
-    	<div class="text-center small" style="color: #674288;">Don't have an account <a href="signup.php">Create an account</a></div>
+    	<div class="text-center small" style="color: #674288;">Back to Signin <a href="signin.php"> Click here.</a></div>
     </div>
+    <?php
+      session_start();
+      include("include/connection.php");
+
+      if(isset($_POST['submit'])){
+            $email = htmlentities(mysqli_real_escape_string($con,$_POST['email']));
+            $recovery_account = htmlentities(mysqli_real_escape_string($con,$_POST['bf']));
+
+            $select_user ="select * from users where user_email='$email' AND forgotten_answer='$recovery_account'";
+
+            $query = mysqli_query($con,$select_user);
+            $check_user = mysqli_num_rows($query);
+
+            if($check_user == 1){
+                 $_SESSION['user_email'] = $email;
+                 echo "<script>window.open('create_password.php', '_self')</script>";
+        }else{
+             echo "<script>alert('Your Email or Bestfriend name is wrong.')</script>";
+             echo "<script>window.open('forgot_pass.php', '_self')</script>";
+        }
+
+     } 
+  ?>
 </body>
 </html>
