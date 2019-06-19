@@ -141,6 +141,7 @@ else{
      	</div>
      </div>
      <?php 
+       
        if(isset($_POST['submit'])){
        	 $msg = htmlentities($_POST['msg_content']);
        	 if($msg == ""){
