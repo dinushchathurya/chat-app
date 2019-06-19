@@ -74,7 +74,7 @@ else{ ?>
 
               $user_password = $row ['user_pass'];
 
-              if($c_pass !== $user_password){
+               if($c_pass !== $user_password){
                 echo"
                    <div class='alert alert-danger'>
                       <strong>your old password didn't match!</strong> 
@@ -88,14 +88,14 @@ else{ ?>
                       <strong>New password and confirm password should be same!</strong> 
                    </div>
                 ";
-           }
-           if($pass1 < 9 AND $pass2 < 9 ){
-           echo"
+              }
+               if($pass1 < 9 AND $pass2 < 9 ){
+                echo"
                    <div class='alert alert-danger'>
                        <strong>USe 9 or more than 9 characters.</strong>
                    </div>
                 ";
-            }
+              }
             
             if($pass1 == $pass2 AND $c_pass == $user_password){
             
