@@ -60,21 +60,21 @@ else{ ?>
         padding: 7px;
         display: table;
         color: #fff;
-    }
-    input[type="file"]{
-        display: none;
-    }
-</style>
-<body>
-    <?php
-       $user = $_SESSION['user_email'];
+    $user = $_SESSION['user_email'];
        $get_user ="select * from users where user_email='$user'";
        $run_user = mysqli_query($con,$get_user);
        $row = mysqli_fetch_array($run_user);
 
        $user_name = $row ['user_name'];
        $user_profile = $row ['user_profile'];
-
+}
+    input[type="file"]{
+        display: none;
+    }
+</style>
+<body>
+    <?php
+       
        echo "
          <div class='card'>
         <img src='$user_profile'>
